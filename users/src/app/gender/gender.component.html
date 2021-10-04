@@ -1,0 +1,9 @@
+<h1>The Gender Of Each User</h1>
+
+<ul>
+    <li *ngFor="let item of apiGender | async">
+        {{item.id}}&nbsp;&nbsp; 
+         {{item.gender}} 
+         &nbsp;&nbsp; {{item.createdAt}}  
+    </li>
+</ul>

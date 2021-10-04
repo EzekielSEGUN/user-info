@@ -1,0 +1,9 @@
+
+<h1>The Full Information For All Users</h1>
+<ul>
+    <li *ngFor="let item of apiUserList | async">
+        {{item.id}}&nbsp;&nbsp; {{item.firstName}}&nbsp;&nbsp;&nbsp;&nbsp; {{item.lastName}}&nbsp;&nbsp;&nbsp;&nbsp;
+         {{item.gender}}&nbsp;&nbsp;&nbsp;&nbsp; {{item.birthday}}&nbsp;&nbsp; {{item.avatar}} 
+         &nbsp;&nbsp; {{item.createdAt}}
+    </li>
+</ul>

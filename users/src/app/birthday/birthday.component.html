@@ -1,0 +1,8 @@
+<h1>The Birth Date Of Each User</h1>
+
+<ul>
+    <li *ngFor="let item of apiBirthday | async">
+        {{item.id}}&nbsp;&nbsp;&nbsp;&nbsp; {{item.birthday}}
+        &nbsp;&nbsp; {{item.createdAt}} 
+    </li>
+</ul>

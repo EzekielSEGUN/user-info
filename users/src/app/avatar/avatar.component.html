@@ -1,0 +1,8 @@
+<h1>The Avatar URL Of Each User</h1>
+
+<ul>
+    <li *ngFor="let item of apiAvatar | async">
+        {{item.id}}&nbsp;&nbsp;  {{item.avatar}} 
+         &nbsp;&nbsp; {{item.createdAt}}
+    </li>
+</ul>

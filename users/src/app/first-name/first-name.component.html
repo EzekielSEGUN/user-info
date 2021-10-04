@@ -1,0 +1,8 @@
+<h1>The First Name Of All The Users</h1>
+
+<ul>
+    <li *ngFor="let item of apiFirstName | async">
+        {{item.id}}&nbsp;&nbsp; {{item.firstName}}
+         &nbsp;&nbsp; {{item.createdAt}} 
+    </li>
+</ul>
